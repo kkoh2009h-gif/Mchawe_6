@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
 *{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Cairo,system-ui,sans-serif;color:#57334b;background:linear-gradient(145deg,#fff2f8,#e8f8ff 55%,#fff4fc);overflow-x:hidden}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 20%,#fff9 0 2px,transparent 3px),radial-gradient(circle at 85% 70%,#fff9 0 3px,transparent 4px);background-size:70px 80px}
-.wrap{min-height:100vh;display:grid;place-items:center;padding:24px 15px;position:relative}.card{width:min(100%,700px);text-align:center;padding:22px 20px 28px;border:0;background:transparent;backdrop-filter:none;border-radius:32px;box-shadow:none;position:relative;z-index:1}
+.wrap{min-height:100vh;display:grid;place-items:center;padding:24px 15px;position:relative}.card{width:min(100%,520px);text-align:center;padding:28px 22px 32px;border:1px solid #fff;background:#ffffffc9;backdrop-filter:blur(12px);border-radius:32px;box-shadow:0 18px 60px #d98bb52b;position:relative;z-index:1}
 .character{width:190px;height:190px;margin:0 auto 8px;animation:bob 3s ease-in-out infinite;filter:drop-shadow(0 10px 12px #7bbfe52b)}
 h1{font-size:clamp(28px,7vw,42px);margin:10px 0;color:#e35a9b;font-weight:900}p{font-size:18px;line-height:1.9;margin:8px 0 18px}
 button{font-family:inherit;border:0;border-radius:999px;padding:13px 30px;font-size:19px;font-weight:900;cursor:pointer;color:white;background:linear-gradient(135deg,#ff82bd,#ec4f9d);box-shadow:0 8px 22px #ef69aa45;transition:transform .2s,box-shadow .2s}
@@ -22,20 +22,20 @@ button:hover{transform:translateY(-3px);box-shadow:0 12px 26px #ef69aa55}button:
 /* Colorful Bubbles-inspired backdrop */
 body{background:radial-gradient(circle at 10% 12%,#ffb5df 0,transparent 28%),radial-gradient(circle at 90% 18%,#8ce8ff 0,transparent 30%),radial-gradient(circle at 15% 88%,#b7a5ff 0,transparent 30%),radial-gradient(circle at 88% 88%,#ffe28b 0,transparent 28%),linear-gradient(135deg,#ffeff8,#e5faff 45%,#fff4d8)}
 body:before{background-image:radial-gradient(circle,#ffffffc9 0 3px,transparent 4px),radial-gradient(circle,#ff80c5a8 0 5px,transparent 6px),radial-gradient(circle,#70d9ffad 0 4px,transparent 5px);background-size:90px 100px,150px 160px,210px 180px}
-.bg-character{position:fixed;width:min(43vw,390px);height:auto;opacity:.92;filter:drop-shadow(0 12px 18px #4baeea40);z-index:0;pointer-events:none}
-.bg-left{left:-45px;top:6%;transform:rotate(-10deg)}
-.bg-right{right:-48px;bottom:1%;transform:rotate(10deg)}
-.card{background:transparent;border:0;box-shadow:none;border-radius:0}
-.character{width:min(68vw,340px);height:auto;max-height:38vh;object-fit:contain;display:block;margin:0 auto 12px;filter:drop-shadow(0 14px 20px #2589e955)}
+.bg-character{position:fixed;width:min(37vw,330px);height:auto;opacity:.38;filter:drop-shadow(0 12px 18px #4baeea40);z-index:0;pointer-events:none}
+.bg-left{left:-55px;top:8%;transform:rotate(-15deg) scale(.95)}
+.bg-right{right:-65px;bottom:2%;transform:rotate(14deg) scale(.85)}
+.card{background:linear-gradient(145deg,#ffffffed,#fff4fbdf 60%,#eafaffed);border:2px solid #ffffffd9;box-shadow:0 22px 70px #d85ba53a, inset 0 0 0 1px #ffc4e5;border-radius:36px}
+.character{width:210px;height:210px;object-fit:contain;filter:drop-shadow(0 12px 16px #54b8e84d)}
 h1{background:linear-gradient(90deg,#f044a1,#8a62e9,#28a9e5);-webkit-background-clip:text;background-clip:text;color:transparent}
 button{background:linear-gradient(120deg,#ff66b2,#b56bfa 55%,#4bbde9);box-shadow:0 9px 24px #b66bea45}
 button:hover{filter:saturate(1.2)}
-@media(max-width:600px){.bg-character{width:55vw;opacity:.82}.bg-left{left:-38px;top:4%}.bg-right{right:-42px;bottom:0}.card{padding:18px 12px 24px}.character{width:min(78vw,360px);max-height:40vh}}.bg-left{left:-42px;top:3%}.bg-right{right:-48px;bottom:0}.card{padding:25px 17px}}
+@media(max-width:600px){.bg-character{width:48vw;opacity:.24}.bg-left{left:-42px;top:3%}.bg-right{right:-48px;bottom:0}.card{padding:25px 17px}}
 </style>
 </head>
 <body>
-<div class="background-art" aria-hidden="true"><img class="bg-character bg-left" src="https://www.pngkey.com/png/detail/5-51851_bubbles-powerpuff-girls-anime-bubbles.png" alt=""><img class="bg-character bg-right" src="https://www.pngkey.com/png/detail/5-51851_bubbles-powerpuff-girls-anime-bubbles.png" alt=""></div><main class="wrap"><section class="card" aria-live="polite">
-<img class="character bubbles-real" src="https://www.pngkey.com/png/detail/5-51851_bubbles-powerpuff-girls-anime-bubbles.png" alt="بابلز من فتيات القوة">
+<div class="background-art" aria-hidden="true"><img class="bg-character bg-left" src="https://www.clipartmax.com/png/middle/75-754129_bubbles-shes-the-joy-and-the-laughter-by-flare-chaser-cute-bubbles.png" alt=""><img class="bg-character bg-right" src="https://www.clipartmax.com/png/middle/75-754129_bubbles-shes-the-joy-and-the-laughter-by-flare-chaser-cute-bubbles.png" alt=""></div><main class="wrap"><section class="card" aria-live="polite">
+<img class="character bubbles-real" src="https://www.clipartmax.com/png/middle/75-754129_bubbles-shes-the-joy-and-the-laughter-by-flare-chaser-cute-bubbles.png" alt="بابلز من فتيات القوة">
 <div id="stage1" class="message"><h1>هلو يحلوة 💗</h1><p>عندي سؤال صغير إلج…</p><button onclick="next(2)">اني؟</button></div>
 <div id="stage2" class="hidden message"><h1>إي انتِ 🥹</h1><p>إي والله انتِ، يا أحلى وحدة بالدنيا!</p><button onclick="next(3)">استحييي 🙈</button></div>
 <div id="stage3" class="hidden message"><div class="final"><div class="name">نور الهدى نوني 💖</div>أحلى بنية وأحلى صديقة<br>شافتها عيوني<br>يعيوني وروحي انتِ<br>أحبج هواي ❤️</div><p>إنتِ أحلى صدفة وأجمل فرحة بحياتي ✨</p><button onclick="hearts()">اضغطي هنا حتى تطير قلوب 💞</button></div>
