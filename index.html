@@ -1,45 +1,24 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#ffd9ec"><title>إلى نوني 💗</title>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffd9ec"><title>إلى مريم 💗</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
-*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Cairo,system-ui,sans-serif;color:#57334b;background:linear-gradient(145deg,#fff2f8,#e8f8ff 55%,#fff4fc);overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 20%,#fff9 0 2px,transparent 3px),radial-gradient(circle at 85% 70%,#fff9 0 3px,transparent 4px);background-size:70px 80px}
-.wrap{min-height:100vh;display:grid;place-items:center;padding:24px 15px;position:relative}.card{width:min(100%,520px);text-align:center;padding:28px 22px 32px;border:1px solid #fff;background:#ffffffc9;backdrop-filter:blur(12px);border-radius:32px;box-shadow:0 18px 60px #d98bb52b;position:relative;z-index:1}
-.character{width:190px;height:190px;margin:0 auto 8px;animation:bob 3s ease-in-out infinite;filter:drop-shadow(0 10px 12px #7bbfe52b);object-fit:contain}
-h1{font-size:clamp(28px,7vw,42px);margin:10px 0;color:#e35a9b;font-weight:900}p{font-size:18px;line-height:1.9;margin:8px 0 18px}
-button{font-family:inherit;border:0;border-radius:999px;padding:13px 30px;font-size:19px;font-weight:900;cursor:pointer;color:white;background:linear-gradient(135deg,#ff82bd,#ec4f9d);box-shadow:0 8px 22px #ef69aa45;transition:transform .2s,box-shadow .2s}
-button:hover{transform:translateY(-3px);box-shadow:0 12px 26px #ef69aa55}button:active{transform:scale(.97)}
-.hidden{display:none}.message{animation:pop .65s cubic-bezier(.2,1.5,.5,1) both}.final{font-size:clamp(20px,5vw,26px);font-weight:800;line-height:2.05;color:#d83f8d}.name{font-size:clamp(27px,7vw,36px);color:#429bd5;text-shadow:0 2px white}
-.hint{font-size:13px;color:#b77c9d;margin-top:20px}.heart{position:fixed;bottom:-40px;z-index:0;animation:float 7s linear forwards;pointer-events:none}
-@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}
-@keyframes pop{from{opacity:0;transform:scale(.65) translateY(15px)}to{opacity:1;transform:scale(1) translateY(0)}}
-@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
-@media(max-width:380px){.card{padding:22px 15px}.character{width:160px;height:160px}}
-body{background:radial-gradient(circle at 10% 12%,#ffb5df 0,transparent 28%),radial-gradient(circle at 90% 18%,#8ce8ff 0,transparent 30%),radial-gradient(circle at 15% 88%,#b7a5ff 0,transparent 30%),radial-gradient(circle at 88% 88%,#ffe28b 0,transparent 28%),linear-gradient(135deg,#ffeff8,#e5faff 45%,#fff4d8)}
-body:before{background-image:radial-gradient(circle,#ffffffc9 0 3px,transparent 4px),radial-gradient(circle,#ff80c5a8 0 5px,transparent 6px),radial-gradient(circle,#70d9ffad 0 4px,transparent 5px);background-size:90px 100px,150px 160px,210px 180px}
-.bg-character{position:fixed;width:min(37vw,330px);height:auto;opacity:.24;filter:drop-shadow(0 12px 18px #4baeea40);z-index:0;pointer-events:none}
-.bg-left{left:-55px;top:8%;transform:rotate(-15deg) scale(.95)}.bg-right{right:-65px;bottom:2%;transform:rotate(14deg) scale(.85)}
-.card{background:linear-gradient(145deg,#ffffffed,#fff4fbdf 60%,#eafaffed);border:2px solid #ffffffd9;box-shadow:0 22px 70px #d85ba53a,inset 0 0 0 1px #ffc4e5;border-radius:36px}
-.character{width:210px;height:210px;filter:drop-shadow(0 12px 16px #54b8e84d)}
-h1{background:linear-gradient(90deg,#f044a1,#8a62e9,#28a9e5);-webkit-background-clip:text;background-clip:text;color:transparent}
-button{background:linear-gradient(120deg,#ff66b2,#b56bfa 55%,#4bbde9);box-shadow:0 9px 24px #b66bea45}
-button:hover{filter:saturate(1.2)}
-@media(max-width:600px){.bg-character{width:48vw;opacity:.24}.bg-left{left:-42px;top:3%}.bg-right{right:-48px;bottom:0}.card{padding:25px 17px}}
-</style>
-</head>
-<body>
-<div class="background-art" aria-hidden="true"><img class="bg-character bg-left" src="baby-angel.webp" alt=""><img class="bg-character bg-right" src="baby-angel.webp" alt=""></div><main class="wrap"><section class="card" aria-live="polite">
-<img class="character" src="baby-angel.webp" alt="أنجيلا القطة اللطيفة">
-<div id="stage1" class="message"><h1>هلو يحلوة 💗</h1><p>عندي سؤال صغير إلج…</p><button onclick="next(2)">اني؟</button></div>
-<div id="stage2" class="hidden message"><h1>إي انتِ 🥹</h1><p>إي والله انتِ، يا أحلى وحدة بالدنيا!</p><button onclick="next(3)">استحييي 🙈</button></div>
-<div id="stage3" class="hidden message"><div class="final"><div class="name">نور الهدى نوني 💖</div>أحلى بنية وأحلى صديقة<br>شافتها عيوني<br>يعيوني وروحي انتِ<br>أحبج هواي ❤️</div><p>إنتِ أحلى صدفة وأجمل فرحة بحياتي ✨</p><button onclick="hearts()">اضغطي هنا حتى تطير قلوب 💞</button></div>
-<div class="hint">رسالة صغيرة من القلب 💌</div>
-</section></main>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Cairo,system-ui,sans-serif;color:#57334b;overflow-x:hidden;background:radial-gradient(circle at 10% 12%,#ffb5df 0,transparent 28%),radial-gradient(circle at 90% 18%,#8ce8ff 0,transparent 30%),radial-gradient(circle at 15% 88%,#b7a5ff 0,transparent 30%),radial-gradient(circle at 88% 88%,#ffe28b 0,transparent 28%),linear-gradient(135deg,#ffeff8,#e5faff 45%,#fff4d8)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(circle,#ffffffc9 0 3px,transparent 4px),radial-gradient(circle,#ff80c5a8 0 5px,transparent 6px),radial-gradient(circle,#70d9ffad 0 4px,transparent 5px);background-size:90px 100px,150px 160px,210px 180px}
+.wrap{min-height:100vh;display:grid;place-items:center;padding:24px 15px;position:relative}.card{width:min(100%,520px);text-align:center;padding:28px 22px 32px;border:2px solid #ffffffd9;background:linear-gradient(145deg,#ffffffed,#fff4fbdf 60%,#eafaffed);backdrop-filter:blur(12px);border-radius:36px;box-shadow:0 22px 70px #d85ba53a,inset 0 0 0 1px #ffc4e5;position:relative;z-index:1}
+.character{width:210px;height:210px;margin:0 auto 8px;animation:bob 3s ease-in-out infinite;filter:drop-shadow(0 12px 16px #54b8e84d);object-fit:contain}
+h1{font-size:clamp(28px,7vw,42px);margin:10px 0;font-weight:900;background:linear-gradient(90deg,#f044a1,#8a62e9,#28a9e5);-webkit-background-clip:text;background-clip:text;color:transparent}p{font-size:18px;line-height:1.9;margin:8px 0 18px}
+button{font-family:inherit;border:0;border-radius:999px;padding:13px 30px;font-size:19px;font-weight:900;cursor:pointer;color:white;background:linear-gradient(120deg,#ff66b2,#b56bfa 55%,#4bbde9);box-shadow:0 9px 24px #b66bea45;transition:transform .2s}button:hover{transform:translateY(-3px);filter:saturate(1.2)}.hidden{display:none}.message{animation:pop .65s cubic-bezier(.2,1.5,.5,1) both}.final{font-size:clamp(20px,5vw,26px);font-weight:800;line-height:2.05;color:#d83f8d}.name{font-size:clamp(27px,7vw,36px);color:#429bd5;text-shadow:0 2px white}.hint{font-size:13px;color:#b77c9d;margin-top:20px}.heart{position:fixed;bottom:-40px;z-index:0;animation:float 7s linear forwards;pointer-events:none}
+.bg-character{position:fixed;width:min(37vw,330px);height:auto;opacity:.24;filter:drop-shadow(0 12px 18px #4baeea40);z-index:0;pointer-events:none}.bg-left{left:-55px;top:8%;transform:rotate(-15deg) scale(.95)}.bg-right{right:-65px;bottom:2%;transform:rotate(14deg) scale(.85)}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}@keyframes pop{from{opacity:0;transform:scale(.65) translateY(15px)}to{opacity:1;transform:scale(1) translateY(0)}}@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:600px){.bg-character{width:48vw;opacity:.24}.bg-left{left:-42px;top:3%}.bg-right{right:-48px;bottom:0}.card{padding:25px 17px}}@media(max-width:380px){.character{width:170px;height:170px}}
+</style></head><body>
+<div aria-hidden="true"><img class="bg-character bg-left" src="baby-angel.webp" alt=""><img class="bg-character bg-right" src="baby-angel.webp" alt=""></div>
+<main class="wrap"><section class="card" aria-live="polite"><img class="character" src="baby-angel.webp" alt="أنجيلا القطة اللطيفة">
+<div id="stage1" class="message"><h1>هلو مريم 💗</h1><p>عندي سؤال حلو إلج…</p><button onclick="next(2)">اني؟</button></div>
+<div id="stage2" class="hidden message"><h1>إي إنتِ 🥹</h1><p>إي إنتِ يا أحلى مريم بالدنيا!</p><button onclick="next(3)">استحييي 🙈</button></div>
+<div id="stage3" class="hidden message"><div class="final"><div class="name">مريم يا أحلى ملك 💖</div>ضحكتج تخلي الدنيا أحلى<br>وأحب وجودج بحياتي هواي<br>يا أحلى وألطف إنسانة 🩷</div><p>وجودج وحده يخلّي كلشي أحلى ✨</p><button onclick="hearts()">اضغطي هنا حتى تطير قلوب 💞</button></div>
+<div class="hint">رسالة صغيرة من القلب 💌</div></section></main>
 <script>
 function next(n){document.querySelectorAll('[id^="stage"]').forEach(e=>e.classList.add('hidden'));document.getElementById('stage'+n).classList.remove('hidden');if(n===3)hearts()}
 function hearts(){for(let i=0;i<24;i++){let h=document.createElement('span');h.className='heart';h.textContent=['💗','💕','💖','🩵','✨'][Math.floor(Math.random()*5)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(18+Math.random()*25)+'px';h.style.animationDuration=(4+Math.random()*5)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),9500)}}
-</script>
-</body></html>
+</script></body></html>
