@@ -22,11 +22,11 @@ button:hover{transform:translateY(-3px);box-shadow:0 12px 26px #ef69aa55}button:
 /* Colorful Bubbles-inspired backdrop */
 body{background:radial-gradient(circle at 10% 12%,#ffb5df 0,transparent 28%),radial-gradient(circle at 90% 18%,#8ce8ff 0,transparent 30%),radial-gradient(circle at 15% 88%,#b7a5ff 0,transparent 30%),radial-gradient(circle at 88% 88%,#ffe28b 0,transparent 28%),linear-gradient(135deg,#ffeff8,#e5faff 45%,#fff4d8)}
 body:before{background-image:radial-gradient(circle,#ffffffc9 0 3px,transparent 4px),radial-gradient(circle,#ff80c5a8 0 5px,transparent 6px),radial-gradient(circle,#70d9ffad 0 4px,transparent 5px);background-size:90px 100px,150px 160px,210px 180px}
-.bg-character{position:fixed;width:min(37vw,330px);height:auto;opacity:.34;filter:drop-shadow(0 12px 18px #4baeea40);z-index:0;pointer-events:none}
+.bg-character{position:fixed;width:min(37vw,330px);height:auto;opacity:.38;filter:drop-shadow(0 12px 18px #4baeea40);z-index:0;pointer-events:none}
 .bg-left{left:-55px;top:8%;transform:rotate(-15deg) scale(.95)}
 .bg-right{right:-65px;bottom:2%;transform:rotate(14deg) scale(.85)}
 .card{background:linear-gradient(145deg,#ffffffed,#fff4fbdf 60%,#eafaffed);border:2px solid #ffffffd9;box-shadow:0 22px 70px #d85ba53a, inset 0 0 0 1px #ffc4e5;border-radius:36px}
-.character{width:210px;height:210px;filter:drop-shadow(0 12px 16px #54b8e84d)}
+.character{width:210px;height:210px;object-fit:contain;filter:drop-shadow(0 12px 16px #54b8e84d)}
 h1{background:linear-gradient(90deg,#f044a1,#8a62e9,#28a9e5);-webkit-background-clip:text;background-clip:text;color:transparent}
 button{background:linear-gradient(120deg,#ff66b2,#b56bfa 55%,#4bbde9);box-shadow:0 9px 24px #b66bea45}
 button:hover{filter:saturate(1.2)}
@@ -34,47 +34,8 @@ button:hover{filter:saturate(1.2)}
 </style>
 </head>
 <body>
-<div class="background-art" aria-hidden="true"><svg class="bg-character bg-left" viewBox="0 0 220 220" role="img" aria-hidden="true">
-<defs><linearGradient id="hair" x2="0" y2="1"><stop stop-color="#75d8ff"/><stop offset="1" stop-color="#3e9fe8"/></linearGradient><linearGradient id="dress" x2="0" y2="1"><stop stop-color="#8be7ff"/><stop offset="1" stop-color="#45b9ed"/></linearGradient></defs>
-<path d="M54 83 Q25 50 57 29 Q82 10 111 25 Q151 8 171 39 Q194 65 164 95 L157 145 65 145Z" fill="url(#hair)" stroke="#3296d6" stroke-width="3"/>
-<path d="M75 126 Q45 143 57 174 Q82 194 110 184 Q143 198 166 174 Q178 144 145 126Z" fill="url(#dress)" stroke="#3296d6" stroke-width="3"/>
-<path d="M78 141 110 158 143 141" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-<ellipse cx="110" cy="93" rx="58" ry="61" fill="#ffe0c9" stroke="#d99582" stroke-width="2"/>
-<path d="M53 86 Q48 45 82 35 Q110 18 139 36 Q171 48 168 87 Q151 70 142 57 Q116 72 79 60 Q68 77 53 86Z" fill="url(#hair)"/>
-<path d="M55 76 Q33 54 47 39 Q66 24 80 48Z" fill="#66cfff"/><path d="M165 76 Q188 54 174 39 Q155 24 140 48Z" fill="#66cfff"/>
-<ellipse cx="89" cy="96" rx="10" ry="15" fill="#fff"/><ellipse cx="132" cy="96" rx="10" ry="15" fill="#fff"/><ellipse cx="91" cy="99" rx="5" ry="9" fill="#3b73a8"/><ellipse cx="130" cy="99" rx="5" ry="9" fill="#3b73a8"/><circle cx="93" cy="95" r="3" fill="#fff"/><circle cx="132" cy="95" r="3" fill="#fff"/>
-<path d="M99 119 Q110 129 122 118" fill="none" stroke="#c96d76" stroke-width="3" stroke-linecap="round"/><ellipse cx="72" cy="115" rx="12" ry="6" fill="#ff9db4" opacity=".6"/><ellipse cx="149" cy="115" rx="12" ry="6" fill="#ff9db4" opacity=".6"/>
-<path d="M104 27 Q110 12 119 26 Q132 8 139 28" fill="none" stroke="#3e9fe8" stroke-width="7" stroke-linecap="round"/>
-<path d="M70 176 Q52 186 58 199 M151 176 Q169 186 163 199" stroke="#ffe0c9" stroke-width="12" stroke-linecap="round"/>
-<path d="M83 197h-18 M145 197h18" stroke="#f6a4c9" stroke-width="13" stroke-linecap="round"/>
-</svg><svg class="bg-character bg-right" viewBox="0 0 220 220" role="img" aria-hidden="true">
-<defs><linearGradient id="hair" x2="0" y2="1"><stop stop-color="#75d8ff"/><stop offset="1" stop-color="#3e9fe8"/></linearGradient><linearGradient id="dress" x2="0" y2="1"><stop stop-color="#8be7ff"/><stop offset="1" stop-color="#45b9ed"/></linearGradient></defs>
-<path d="M54 83 Q25 50 57 29 Q82 10 111 25 Q151 8 171 39 Q194 65 164 95 L157 145 65 145Z" fill="url(#hair)" stroke="#3296d6" stroke-width="3"/>
-<path d="M75 126 Q45 143 57 174 Q82 194 110 184 Q143 198 166 174 Q178 144 145 126Z" fill="url(#dress)" stroke="#3296d6" stroke-width="3"/>
-<path d="M78 141 110 158 143 141" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-<ellipse cx="110" cy="93" rx="58" ry="61" fill="#ffe0c9" stroke="#d99582" stroke-width="2"/>
-<path d="M53 86 Q48 45 82 35 Q110 18 139 36 Q171 48 168 87 Q151 70 142 57 Q116 72 79 60 Q68 77 53 86Z" fill="url(#hair)"/>
-<path d="M55 76 Q33 54 47 39 Q66 24 80 48Z" fill="#66cfff"/><path d="M165 76 Q188 54 174 39 Q155 24 140 48Z" fill="#66cfff"/>
-<ellipse cx="89" cy="96" rx="10" ry="15" fill="#fff"/><ellipse cx="132" cy="96" rx="10" ry="15" fill="#fff"/><ellipse cx="91" cy="99" rx="5" ry="9" fill="#3b73a8"/><ellipse cx="130" cy="99" rx="5" ry="9" fill="#3b73a8"/><circle cx="93" cy="95" r="3" fill="#fff"/><circle cx="132" cy="95" r="3" fill="#fff"/>
-<path d="M99 119 Q110 129 122 118" fill="none" stroke="#c96d76" stroke-width="3" stroke-linecap="round"/><ellipse cx="72" cy="115" rx="12" ry="6" fill="#ff9db4" opacity=".6"/><ellipse cx="149" cy="115" rx="12" ry="6" fill="#ff9db4" opacity=".6"/>
-<path d="M104 27 Q110 12 119 26 Q132 8 139 28" fill="none" stroke="#3e9fe8" stroke-width="7" stroke-linecap="round"/>
-<path d="M70 176 Q52 186 58 199 M151 176 Q169 186 163 199" stroke="#ffe0c9" stroke-width="12" stroke-linecap="round"/>
-<path d="M83 197h-18 M145 197h18" stroke="#f6a4c9" stroke-width="13" stroke-linecap="round"/>
-</svg></div><main class="wrap"><section class="card" aria-live="polite">
-<svg class="character" viewBox="0 0 220 220" role="img" aria-label="شخصية كرتونية زرقاء لطيفة">
-<defs><linearGradient id="hair" x2="0" y2="1"><stop stop-color="#75d8ff"/><stop offset="1" stop-color="#3e9fe8"/></linearGradient><linearGradient id="dress" x2="0" y2="1"><stop stop-color="#8be7ff"/><stop offset="1" stop-color="#45b9ed"/></linearGradient></defs>
-<path d="M54 83 Q25 50 57 29 Q82 10 111 25 Q151 8 171 39 Q194 65 164 95 L157 145 65 145Z" fill="url(#hair)" stroke="#3296d6" stroke-width="3"/>
-<path d="M75 126 Q45 143 57 174 Q82 194 110 184 Q143 198 166 174 Q178 144 145 126Z" fill="url(#dress)" stroke="#3296d6" stroke-width="3"/>
-<path d="M78 141 110 158 143 141" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-<ellipse cx="110" cy="93" rx="58" ry="61" fill="#ffe0c9" stroke="#d99582" stroke-width="2"/>
-<path d="M53 86 Q48 45 82 35 Q110 18 139 36 Q171 48 168 87 Q151 70 142 57 Q116 72 79 60 Q68 77 53 86Z" fill="url(#hair)"/>
-<path d="M55 76 Q33 54 47 39 Q66 24 80 48Z" fill="#66cfff"/><path d="M165 76 Q188 54 174 39 Q155 24 140 48Z" fill="#66cfff"/>
-<ellipse cx="89" cy="96" rx="10" ry="15" fill="#fff"/><ellipse cx="132" cy="96" rx="10" ry="15" fill="#fff"/><ellipse cx="91" cy="99" rx="5" ry="9" fill="#3b73a8"/><ellipse cx="130" cy="99" rx="5" ry="9" fill="#3b73a8"/><circle cx="93" cy="95" r="3" fill="#fff"/><circle cx="132" cy="95" r="3" fill="#fff"/>
-<path d="M99 119 Q110 129 122 118" fill="none" stroke="#c96d76" stroke-width="3" stroke-linecap="round"/><ellipse cx="72" cy="115" rx="12" ry="6" fill="#ff9db4" opacity=".6"/><ellipse cx="149" cy="115" rx="12" ry="6" fill="#ff9db4" opacity=".6"/>
-<path d="M104 27 Q110 12 119 26 Q132 8 139 28" fill="none" stroke="#3e9fe8" stroke-width="7" stroke-linecap="round"/>
-<path d="M70 176 Q52 186 58 199 M151 176 Q169 186 163 199" stroke="#ffe0c9" stroke-width="12" stroke-linecap="round"/>
-<path d="M83 197h-18 M145 197h18" stroke="#f6a4c9" stroke-width="13" stroke-linecap="round"/>
-</svg>
+<div class="background-art" aria-hidden="true"><img class="bg-character bg-left" src="https://www.clipartmax.com/png/middle/75-754129_bubbles-shes-the-joy-and-the-laughter-by-flare-chaser-cute-bubbles.png" alt=""><img class="bg-character bg-right" src="https://www.clipartmax.com/png/middle/75-754129_bubbles-shes-the-joy-and-the-laughter-by-flare-chaser-cute-bubbles.png" alt=""></div><main class="wrap"><section class="card" aria-live="polite">
+<img class="character bubbles-real" src="https://www.clipartmax.com/png/middle/75-754129_bubbles-shes-the-joy-and-the-laughter-by-flare-chaser-cute-bubbles.png" alt="بابلز من فتيات القوة">
 <div id="stage1" class="message"><h1>هاي يحلوة 💗</h1><p>عندي سؤال صغير إلج…</p><button onclick="next(2)">اني؟</button></div>
 <div id="stage2" class="hidden message"><h1>إي انتِ 🥹</h1><p>إي والله انتِ، يا أحلى وحدة بالدنيا!</p><button onclick="next(3)">استحييي 🙈</button></div>
 <div id="stage3" class="hidden message"><div class="final"><div class="name">نور الهدى نوني 💖</div>أحلى بنية وأحلى صديقة<br>شافتها عيوني<br>يعيوني وروحي انتِ<br>أحبج هواي ❤️</div><p>إنتِ أحلى صدفة وأجمل فرحة بحياتي ✨</p><button onclick="hearts()">اضغطي هنا حتى تطير قلوب 💞</button></div>
